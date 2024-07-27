@@ -2,25 +2,22 @@
 
 ## Introduction
 
-This project involves simulating underwater object tracking using SONAR technology and the Unscented Kalman Filter (UKF). It focuses on experiments with non-linear transformations for accurate state estimation and object tracking. The project includes realistic simulation environments, SONAR pulse generation, and advanced filtering techniques, demonstrating applications in marine biology, underwater navigation, and defense.
 
-## Project Objectives
+This project involves a basic simulation for underwater object tracking using SONAR technology and the Unscented Kalman Filter (UKF). It is part of ongoing experiments with non-linear transformations for state estimation and object tracking. The project includes a simulation environment, SONAR pulse generation, and filtering techniques.
 
-The main objective of this project is to develop a robust system for tracking underwater objects using simulated SONAR data and the UKF. The project aims to:
-1. Create a realistic simulation environment for underwater target tracking.
-2. Generate and process SONAR signals to detect and estimate target positions.
-3. Implement and tune the UKF for optimal state estimation in non-linear environments.
-4. Analyze the performance of the UKF in tracking accuracy and computational efficiency.
+### Project Objectives
+The main objectives are:
 
-## Simulation
+Create a simulation environment for underwater target tracking.
+Generate and process SONAR signals to estimate target positions.
+Implement and tune the UKF for state estimation.
+Analyze the performance of the UKF in tracking accuracy.
 
 ### Simulation Environment
-
-The simulation involves an active SONAR system with two moving targets. The environment is set with specific parameters such as maximum depth, maximum range, and sound speed profile. The simulation tracks the movement of targets with defined initial positions and velocities, generating SONAR pulses and processing the returns.
+The simulation involves an active SONAR system with two moving targets. The environment is set with parameters such as maximum depth, range, and sound speed profile. The simulation tracks target movement, generates SONAR pulses, and processes the returns.
 
 ### SONAR Pulse Generation
-
-A frequency-modulated pulse is generated, propagated through the underwater environment, and reflected back to the receiver. The simulation accounts for factors like attenuation, Doppler effects, and noise to create realistic SONAR returns.
+A frequency-modulated pulse is generated, propagated through the underwater environment, and reflected back to the receiver. The simulation considers factors like attenuation, Doppler effects, and noise.
 
 ### State Estimation with Unscented Kalman Filter
 
