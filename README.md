@@ -131,3 +131,26 @@ Q scale: 0.05, R scale: 0.2, P scale: 1, Error: 7.42 meters
 Q scale: 0.05, R scale: 0.2, P scale: 5, Error: 10.91 meters
 Q scale: 0.05, R scale: 0.2, P scale: 10, Error: 12.32 meters
 Q scale: 0.05, R scale: 0.2, P scale: 20, Error: 13.17 meters
+
+
+
+
+### Best Parameters
+
+The best parameters achieved through tuning are:
+- **Q (Process Noise Covariance):**
+
+  ```plaintext
+  [[0.001 0.    0.    0.   ]
+   [0.    0.001 0.    0.   ]
+   [0.    0.    0.001 0.   ]
+   [0.    0.    0.    0.001]]
+
+
+R (Measurement Noise Covariance): [[0.2]]
+
+P (Initial State Covariance):
+[[1. 0. 0. 0.]
+ [0. 1. 0. 0.]
+ [0. 0. 1. 0.]
+ [0. 0. 0. 1.]]
