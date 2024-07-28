@@ -1,30 +1,25 @@
-# Experiments with Non-Linear Transformations for Object Tracking
+# Underwater Object Tracking with SONAR and UKF
 
 ## Introduction
+This project simulates underwater object tracking using SONAR and the Unscented Kalman Filter (UKF) to explore non-linear state estimation techniques.
 
-This project involves a basic simulation for underwater object tracking using SONAR technology and the Unscented Kalman Filter (UKF). It is part of ongoing experiments with non-linear transformations for state estimation and object tracking. The project includes a simulation environment, SONAR pulse generation, and filtering techniques.
-
-### Project Objectives
-
-The main objectives are:
-- Create a simulation environment for underwater target tracking.
-- Generate and process SONAR signals to estimate target positions.
-- Implement and tune the UKF for state estimation.
-- Analyze the performance of the UKF in tracking accuracy.
+## Technical Overview
 
 ### Simulation Environment
-
-The simulation involves an active SONAR system with two moving targets. Parameters such as maximum depth, range, and sound speed profile are set to create a realistic environment. The simulation tracks target movement, generates SONAR pulses, and processes the returns.
+- **Active SONAR System**: Simulates two targets with configurable depths and speeds.
+- **Environment Parameters**: Includes max depth, range, and sound speed profiles.
 
 ### SONAR Pulse Generation
-
-A frequency-modulated pulse is generated, propagated through the underwater environment, and reflected back to the receiver. The simulation accounts for factors like attenuation, Doppler effects, and noise.
+- **Type**: Frequency-modulated continuous wave (FMCW).
+- **Effects**: Accounts for attenuation, Doppler effects, and noise.
 
 ### State Estimation with Unscented Kalman Filter
+- **Initialization**: Specifies initial states, process (`Q`), measurement (`R`), and state covariance (`P`).
+- **Tuning**: UKF parameters are fine-tuned to optimize tracking accuracy.
 
-The UKF estimates the state of the targets based on noisy SONAR measurements. It is initialized with specific process noise covariance (`Q`), measurement noise covariance (`R`), and initial state covariance (`P`). These parameters are tuned for optimal performance.
-## Results
-
+### Objectives
+- Develop a realistic simulation for tracking underwater targets.
+- Enhance SONAR signal processing and UKF tuning for accurate state estimation.
 ### UKF Tracking Results
 
 The UKF closely follows the actual path of the target, indicating accurate tracking performance.
